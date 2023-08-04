@@ -7,6 +7,7 @@ html, body {
   margin: 0;
   padding: 0;
   font-family: 'Roboto', sans-serif;
+  position: relative;
 }
 .title-header{
   text-align: center;
@@ -54,6 +55,8 @@ html, body {
   border-color: #038cfc;
 }
 
+
+
 .img-random-container{
   display: flex;
   align-items: center;
@@ -86,15 +89,18 @@ html, body {
 }
 
 .breed-container select{
-  width: 500px;
+  width: 300px;
   height: 40px;
+  padding: 0 20px;
   margin-top: 20px;
   font-family: 'Courier New', Courier, monospace;
 }
 .breed-container img{
   margin-top: 50px;
-  width: 50%;
-  border-radius: 20px;
+  padding: 0 20px;
+  width: 70%;
+  height: 300px;
+  border-radius: 45px;
 }
 
 .loading-container{
@@ -124,6 +130,32 @@ html, body {
   border-radius: 5px;
   background-size: 200% 100%;
   animation: 1.5s shine linear infinite;
+}
+
+.footer-container{
+  border-top: 1px solid #000;
+  width: 100%;
+ 
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-container ul{
+  display: flex;
+  gap: 20px;
+}
+.footer-container ul li{
+  list-style: none;
+  
+}
+
+.footer-container ul li img{
+  width: 40px;
 }
 
 @keyframes shine {

@@ -27,7 +27,6 @@ const BreedList = () => {
         `https://dog.ceo/api/breed/${imgBreed}/images/random`
       );
         setImgDisplay(res.data.message)
-        console.log(imgDisplay);
     } catch (error) {
       console.log(error);
     }
@@ -38,7 +37,6 @@ const BreedList = () => {
     const selectedBreed = event.target.value;
     // Lakukan apa pun yang Anda inginkan ketika pengguna memilih salah satu pilihan
     setImgBreed(selectedBreed)
-   console.log(imgDisplay);
    fetchBreedsIMG()
     console.log("Selected Breed:", selectedBreed);
   };
@@ -50,7 +48,7 @@ const BreedList = () => {
       <h2 className="text-center mt-3">Select a Dog Breed</h2>
     
         <select onChange={handleChange}>
-          <option value="affenpinscher">affenpinscher</option>
+          <option value="">select breed</option>
           {dataBreeds.map((breed) => (
             <option key={breed} value={breed}>
               {breed}

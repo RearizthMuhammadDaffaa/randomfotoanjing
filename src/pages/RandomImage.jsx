@@ -28,7 +28,7 @@ const RandomImage = () => {
 
   
   return (
-    <Container>
+    <Container className="random-container">
       <Row>
         <Col className="col-button mb-5 mt-3">
           <button onClick={fetchData}>generate foto Anjing</button>
