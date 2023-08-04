@@ -135,9 +135,7 @@ html, body {
 .footer-container{
   border-top: 1px solid #000;
   width: 100%;
- 
-  position: fixed;
-  margin-top: 200px;
+  
   display: flex;
   flex-direction: column;
   justify-content: center;
